@@ -11,10 +11,10 @@
         <img src="imagens-filmes/logo.png" alt="logo" class="logo">
         <h1>MovieFlix</h1>
         <nav> 
-            <a href="indexx.php">Home</a>
-            <a href="indexx.php">Home</a>
-            <a href="indexx.php">Home</a>
-            <a href="indexx.php">Home</a>
+            <a href="indexx.php">home</a>
+            <a href="listasdefilmes.php">Filmes</a>
+            <a href="noticias.php">Noticias</a>
+            <a href="contato.php">contato</a>
         </nav>
     </header>
     

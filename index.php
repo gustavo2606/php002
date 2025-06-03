@@ -14,3 +14,7 @@
      
 </body>
 </html>
+
+<?php
+include "radape.php";
+?>
