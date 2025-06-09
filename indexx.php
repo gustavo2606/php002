@@ -3,7 +3,7 @@ include "cabecalho.php";
 include "banner.php";
 ?>
 <div class="container">
-    <h2 class ="display-2">Melhores Avaliações</h2>
+    <h2 class ="display-5">Melhores Avaliações</h2>
     <div class="row">
         <div class="col-3">
             <img src="imagens-filmes/django.jpg" width="180">
@@ -13,7 +13,7 @@ include "banner.php";
             </a>
             <span>10/10</span>
         </div>
-        <div class="col">
+        <div class="col-3">
             <img src="imagens-filmes/harry.png">
             <button class="btn-filme">Assistir</button>
             <a href="umfilme.php">
@@ -21,7 +21,7 @@ include "banner.php";
             </a>
             <span>10/10</span>
         </div>
-        <div class="col-">
+        <div class="col-3">
             <img src="imagens-filmes/parcy.jpg">
             <button class="btn-filme">Assistir</button>
             <a href="umfilme.php">
@@ -29,7 +29,7 @@ include "banner.php";
             </a>
             <span>10/10</span>
         </div>
-        <div class="col-">
+        <div class="col-3">
             <img src="imagens-filmes/piratas.jpg" width="180">
             <button class="btn-filme">Assistir</button>
             <a href="umfilme.php">
