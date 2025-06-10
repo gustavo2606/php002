@@ -147,24 +147,3 @@ button:hover {
         padding: 30px 20px;
     }
 }
-
-.container{
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container h2{
-    width: 100%;
-}
-
-.container img{
-    width: 300px;
-    margin: 10px 300px;
-}
-
-.container p{
-    margin: 0 50px;
-}
