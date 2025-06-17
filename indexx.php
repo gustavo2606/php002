@@ -19,7 +19,22 @@ include "banner.php"
             die("deu ruim" . mysqli_connect_error()); 
         }
 
-        echo "deu bom" ; 
+        $sql = "select * from filmes";
+        $resultado = mysqli_query($conexao, $sql);
+
+        // echo "<pre>";
+        // print_r($resultado);
+        // exit();
+        while($linha = mysqli_fetch_assoc($resultado)){
+             ?> 
+             <div class="col-3">
+            <img src="imagens-filmes/django.jpg" class="img-fluid">
+            <h3><?= htmlspecialchars($linha['titulo']); ?></h3>
+            <span>⭐10\10</span>
+        </div>
+        <?php
+         }
+
         ?>
 
         <div class="col-3">
