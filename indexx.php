@@ -12,6 +12,7 @@ include "banner.php"
         $bd = 'bd_filmes';
         $usuario = 'root';
         $senha = '';
+        $id = $_GET['id'] ?? 0;
 
 
         $conexao = mysqli_connect($servidor,$usuario,$senha,$bd);
@@ -21,45 +22,24 @@ include "banner.php"
 
         $sql = "select * from filmes";
         $resultado = mysqli_query($conexao, $sql);
+ 
+        while ($linha = mysqli_fetch_assoc($resultado)) {
+        ?>
+            <div class="col-3 mb-5">
+                <img src="<?= $linha['foto']; ?>" class="img-fluid img-formatada">
+                <h3><?= $linha['titulo']; ?></h3>
+                <span>⭐<?= $linha['avaliacao']; ?>/10</span>
+                
+            </a>
 
-        // echo "<pre>";
-        // print_r($resultado);
-        // exit();
-        while($linha = mysqli_fetch_assoc($resultado)){
-             ?> 
-             <div class="col-3">
-            <img src="imagens-filmes/django.jpg" class="img-fluid">
-            <h3><?= htmlspecialchars($linha['titulo']); ?></h3>
-            <span>⭐10\10</span>
-        </div>
+            </div>
         <?php
-         }
-
+        }
+ 
         ?>
 
-        <div class="col-3">
-            <img src="imagens-filmes/django.jpg" class="img-fluid">
-            <h3>Django Livre</h3>
-            <span>⭐10\10</span>
-        </div>
+       
 
-        <div class="col-3">
-            <img src="imagens-filmes/harry.png" class="img-fluid">
-            <h3>Harry Potter</h3>
-            <span>⭐10\10</span>
-        </div>
-
-        <div class="col-3">
-            <img src="imagens-filmes/parcy.jpg" class="img-fluid">
-            <h3>Parcy Jackson</h3>
-            <span>⭐10\10</span>
-        </div>
-
-        <div class="col-3">
-            <img src="imagens-filmes/piratas.jpg" class="img-fluid">
-            <h3>Piratas do Cáribe</h3>
-            <span>⭐10\10</span>
-        </div>
 
 
 
